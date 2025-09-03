@@ -1,0 +1,427 @@
+/* Start Global Style */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Arvo", serif;
+  color: #333;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.375rem;
+}
+div.image img {
+  margin-top: 2.5rem;
+  width: 100%;
+  display: block;
+}
+.arrow-link {
+  font-family: "Open Sans", sans-serif;
+  line-height: 26px;
+  letter-spacing: 2.4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration-line: none;
+  font-size: 0.75rem;
+  margin-block: 0.625rem 2.375rem;
+}
+.arrow-link::after {
+  content: ">";
+}
+/* End Global Style */
+/* Start Container Style */
+div.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, auto);
+  grid-auto-columns: 1fr;
+  gap: 0rem 0rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "item-2"
+    "item-1"
+    "item-3"
+    "item-4"
+    "item-5"
+    "item-6"
+    "item-7"
+    "item-8"
+    "item-9"
+    "item-10";
+}
+/*  Start item-2 (Header div) Style */
+div.container div.item-2 {
+  grid-area: item-2;
+  background-color: #f7f8f9;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2.75rem 1.25rem;
+}
+span.header-title,
+div.container div.item-2 > span {
+  font-family: "Montserrat", sans-serif;
+  color: #9fa3a7;
+  font-weight: 700;
+  margin-top: 0.5625rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+div.container div.item-2 > h1 {
+  font-size: 2.6875rem;
+  line-height: 3.75rem;
+  text-align: center;
+  margin-block: 1.3125rem 0.6875rem;
+}
+div.container div.item-2 > a {
+  color: #27b9c2;
+  font-size: 0.875rem;
+  line-height: 26px;
+}
+/*  End item-2 (Header div) Style */
+/*  Start item-1 (iphone) Style */
+div.container div.item-1 {
+  grid-area: item-1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0.9375rem 2.25rem 0;
+}
+div.container div.item-1 div.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1.1875rem;
+}
+div.container div.item-1 div.content > h3 {
+  margin: 0.9375rem 0 0.375rem 0rem;
+  text-align: start;
+  line-height: 1.9375rem;
+}
+div.container div.item-1 div.content > p {
+  color: #9fa3a7;
+  font-size: 0.875rem;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+div.container div.item-1 div.image {
+  width: 70%;
+  transform: translateX(-1rem);
+  margin-inline: auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+/*  End item-1 (iphone) Style */
+/*  Start item-3 (Keyboard) Style */
+div.container div.item-3 div.image {
+  width: 75%;
+}
+div.container div.item-3 {
+  grid-area: item-3;
+  background-color: #f05638;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+div.container div.item-3 div.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+div.container div.item-3 div.content > h3 {
+  color: #fffbfb;
+  text-align: center;
+  font-weight: 700;
+  width: 61%;
+  margin: 0.625rem 0;
+  line-height: 2.0625rem;
+}
+.yellow {
+  color: #ffc80a;
+}
+/*  End item-3 (Keyboard) Style */
+/*  Start item-4 (joystick) Style */
+div.container div.item-4 {
+  grid-area: item-4;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f8f9;
+  padding-block: 2.0625rem;
+}
+div.container div.item-4 div.content {
+  text-align: center;
+}
+div.container div.item-4 div.content > h3 {
+  text-align: start;
+  margin-block: 0.8125rem 2.75rem;
+}
+div.container div.item-4 div.content > a {
+  color: #27b9c2;
+}
+div.container div.item-4 div.image {
+  width: 58%;
+  transform: translateX(-1.875rem);
+}
+div.container div.item-4 div.image img {
+  margin-top: 0;
+}
+/*  End item-4 (joystick) Style */
+
+/*  Start item-5 (imac) Style */
+
+div.container div.item-5 {
+  grid-area: item-5;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4.0625rem 0.8125rem 2.375rem 1.0625rem;
+}
+div.container div.item-5 div.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+div.container div.item-5 div.content div.head h3 {
+  margin-block: 0.75rem 0.625rem;
+  line-height: 2rem;
+}
+div.container div.item-5 div.content div.head div.image {
+  width: 100%;
+}
+div.container div.item-5 div.content div.head div.image img {
+  transform: translateX(-58%);
+  width: 200%;
+}
+div.container div.item-5 div.content div.description p {
+  margin-block: 2.3125rem 1.375rem;
+  color: #9fa3a7;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  padding-right: 0.1875rem;
+}
+div.container div.item-5 div.content div.description a {
+  color: #27b9c2;
+}
+/*  End item-5 (imac) Style */
+/*  Start item-6 (twitter) Style */
+
+div.container div.item-6 {
+  grid-area: item-6;
+  background-color: #38d5f4;
+}
+div.container div.item-6 div.circle {
+  margin-inline: auto;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #35cfed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.container div.item-6 div.circle h3 {
+  margin-block: 0.625rem 0.875rem;
+  width: 62%;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+}
+div.container div.item-6 div.circle div.image {
+  width: 18%;
+}
+div.container div.item-6 div.circle div.image img {
+  margin: 0;
+}
+
+/*  End item-6 (twitter) Style */
+/*  Start item-7 (tablet) Style */
+
+div.container div.item-7 {
+  grid-area: item-7;
+  background-color: #93b6b7;
+  background-image: url("../images/tablet-bg.png");
+  background-position: 50% 100%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  padding: 1rem 0 0 1.875rem;
+}
+div.container div.item-7 span {
+  background-color: #fa684f;
+  border-radius: 0.3125rem;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 0.3125rem 0.625rem;
+  letter-spacing: 0.125rem;
+  font-weight: 600;
+}
+div.container div.item-7 h3 {
+  color: #fff;
+  width: 66%;
+  text-align: center;
+  margin-inline: auto;
+  margin-left: 3.3125rem;
+  margin-top: 1.4375rem;
+  line-height: 2.0625rem;
+  font-weight: 600;
+}
+div.container div.item-7 div.image img {
+  margin-top: 1.875rem;
+  transform: translateX(-16%);
+  width: 96%;
+}
+/*  End item-7 (tablet) Style */
+/*  Start item-8 (icloud) Style */
+div.container div.item-8 {
+  grid-area: item-8;
+  background-color: #8f77bc;
+  padding: 1.875rem 1.875rem 5.3125rem 1.875rem;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.container div.item-8 div.circle {
+  width: 23.3125rem;
+  height: 23.3125rem;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #8166b0;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+div.container div.item-8 div.circle span:first-child {
+  font-size: 0.625rem;
+  color: #fff;
+  background-color: #8b72b6;
+  padding: 0.4375rem 0.9375rem 0.4375rem 0.625rem;
+  letter-spacing: 0.1875rem;
+  border-radius: 3.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+div.container div.item-8 div.circle span i {
+  color: #ffc80b;
+  padding-right: 0.3125rem;
+}
+div.container div.item-8 div.circle div.image {
+  width: 64%;
+}
+div.container div.item-8 div.circle div.image img {
+  margin-top: 1.25rem;
+  transform: translateX(-0.6875rem);
+}
+div.container div.item-8 div.circle span {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+div.container div.item-8 div.icloud {
+  text-align: center;
+}
+div.container div.item-8 div.icloud h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-block: 1.0625rem 0;
+  font-weight: 600;
+  transform: translateX(-0.125rem);
+}
+div.container div.item-8 div.icloud p {
+  color: #fff;
+  width: 87%;
+  margin-block: 0.5625rem 2.75rem;
+  font-size: 0.875rem;
+  padding-left: 3.0625rem;
+  line-height: 1.625rem;
+}
+div.container div.item-8 div.icloud a {
+  background-color: #ffc80b;
+  text-decoration-line: none;
+  color: #000;
+  padding: 1.125rem 1.8125rem;
+  font-size: 0.75rem;
+  margin-top: 1.875rem;
+  border-radius: 3.4375rem;
+  letter-spacing: 0.125rem;
+  font-weight: 700;
+}
+/*  End item-8 (icloud) Style */
+/*  Start item-9 (MuchBetter) Style */
+
+div.container div.item-9 {
+  grid-area: item-9;
+  background-color: #f7f8f9;
+  text-align: center;
+  padding: 1.875rem 0 3.125rem;
+}
+div.container div.item-9 span {
+  background-color: #7bc424;
+  color: #fff;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.3125rem;
+  font-size: 0.5rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+}
+div.container div.item-9 h3 {
+  width: 60%;
+  margin-inline: auto;
+  margin-block: 0.3125rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+/*  End item-9 (MuchBetter) Style */
+/*  Start item-10 (TV) Style */
+div.container div.item-10 {
+  grid-area: item-10;
+  background-color: #2c2c2c;
+  color: #fff;
+  padding-bottom: 2.0625rem;
+  text-align: center;
+}
+div.container div.item-10 div.image {
+  width: 62%;
+  transform: translateX(1.5625rem);
+}
+div.container div.item-10 div.image img {
+  margin: 0;
+}
+div.container div.item-10 h3 {
+  color: #fff;
+  width: 85%;
+  margin: 0rem;
+  padding-left: 3.3125rem;
+  line-height: 2rem;
+  transform: translateY(-1rem);
+}
+
+/*  End item-10 (TV) Style */
+/* End Container Style */
